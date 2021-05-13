@@ -137,11 +137,32 @@ class _HomeScreenState extends State<HomeScreen> {
           group: Group.College,
           block: false),
       Contact(
+          id: 12,
+          name: "Abson Francisco",
+          telephone: "(81) 98888-8888",
+          age: 21,
+          group: Group.HighSchool,
+          block: false),
+      Contact(
+          id: 12,
+          name: "Gabriel Fernando",
+          telephone: "(81) 98888-8888",
+          age: 21,
+          group: Group.HighSchool,
+          block: false),
+      Contact(
           id: 7,
           name: "Maria José",
           telephone: "(81) 98888-8888",
           age: 21,
           group: Group.Mother,
+          block: false),
+      Contact(
+          id: 7,
+          name: "Ana Vitória",
+          telephone: "(81) 98888-8888",
+          age: 21,
+          group: Group.Lover,
           block: false),
     ];
 
@@ -153,7 +174,7 @@ class _HomeScreenState extends State<HomeScreen> {
   _buildFloatingActionButton() {
     return FloatingActionButton(
       child: Icon(Icons.add),
-      onPressed: () {},
+      onPressed: () => Navigator.pushNamed(context, '/add'),
     );
   }
 }

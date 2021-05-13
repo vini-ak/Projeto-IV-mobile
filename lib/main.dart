@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ui/ui/screens/home.dart';
 
+import 'ui/screens/add_contact.dart';
+import 'ui/screens/home.dart';
+import 'ui/screens/home.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -13,7 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'Projeto IV - UI',
       debugShowCheckedModeBanner: false,
       theme: _theme(),
-      home: HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/add': (context) => AddContactScreen(),
+      },
     );
   }
 

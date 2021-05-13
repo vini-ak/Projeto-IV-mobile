@@ -1,12 +1,13 @@
 enum Group {
-  Family,
-  HighSchool,
-  College,
-  Lover,
   Mother,
   Father,
+  Lover,
   Child,
+  Family,
+  Friend,
   Coworker,
+  College,
+  HighSchool,
   ExCoworker,
 }
 
